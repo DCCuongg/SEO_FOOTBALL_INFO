@@ -1,5 +1,7 @@
 # SEO_FOOTBALL_INFO
-
+# Hướng Dẫn Cài Đặt
+Tải trên github về máy.
+Chạy trên local bằng five server
 # Kiến trúc mã nguồn Static Site Structure (kiểu CMS tĩnh).
 blog-site/
 │
