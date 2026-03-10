@@ -3,6 +3,7 @@
 Tải trên github về máy.
 Chạy trên local bằng five server
 # Kiến trúc mã nguồn Static Site Structure (kiểu CMS tĩnh).
+```
 blog-site/
 │
 ├── index.html              # Trang chủ
@@ -33,3 +34,5 @@ blog-site/
 │
 └── data/
     └── posts.json          # danh sách bài viết
+
+```

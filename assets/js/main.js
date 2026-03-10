@@ -36,7 +36,7 @@ function renderHotNews(post) {
 
   hotNews.innerHTML = `
     <img src="./${post.image}" alt="${post.title}">
-    <h2>${post.title}</h2>
+    <h2 class="limit-text">${post.title}</h2>
     <div class="additional-info">
         <span class="author">${post.author}</span>
         <span class="dot">•</span>
@@ -55,7 +55,7 @@ function renderLatestNews(posts) {
 
   posts.forEach((post, index) => {
     container.innerHTML += `
-      <p>${post.title}</p>
+      <p class="limit-text-2">${post.title}</p>
       ${index !== posts.length - 1 ? '<div class="line"></div>' : ''}
     `;
   });
@@ -74,7 +74,7 @@ function renderMoreNews(posts) {
       <div class="card">
         <img src="./${post.image}" alt="${post.title}">
         <div class="card-content">
-          <h3>${post.title}</h3>
+          <h3 class="limit-text-2">${post.title}</h3>
           <div class="additional-info">
             <span class="author">${post.author}</span>
             <span class="dot">•</span>
@@ -104,7 +104,7 @@ function renderSportSection(posts, category, sectionIndex) {
       <div class="box">
         <img src="./${post.image}" alt="${post.title}">
         <div class="card-content">
-          <h3>${post.title}</h3>
+          <h3 class="limit-text">${post.title}</h3>
           <div class="additional-info">
             <span class="author">${post.author}</span>
             <span class="dot">•</span>
