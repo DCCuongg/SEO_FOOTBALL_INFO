@@ -1,3 +1,6 @@
+/* =========================================
+   THIẾT LẬP CHUNG (GENERAL STYLES)
+   ========================================= */
 html,
 body {
   margin: 0;
@@ -7,23 +10,25 @@ body {
   background-color: rgb(240, 240, 240);
 }
 
-
-
-/* Header css */
-
+/* =========================================
+      PHẦN HEADER (HEADER CSS)
+      ========================================= */
 header {
   background-color: rgb(31, 31, 31);
   color: #fff;
   position: sticky;
+  /* Cố định menu khi cuộn */
   top: 0;
   z-index: 1000;
   transition: transform 0.3s ease;
 }
 
+/* Hiệu ứng ẩn header khi cuộn xuống (thường dùng với JS) */
 header.hide {
   transform: translateY(-100%);
 }
 
+/* Container bên trong header để giới hạn độ rộng */
 header .container {
   display: flex;
   max-width: 1250px;
@@ -32,6 +37,7 @@ header .container {
   padding: 1rem;
 }
 
+/* Logo trang web */
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -41,12 +47,14 @@ header .container {
   cursor: pointer;
 }
 
+/* Nút bấm mở menu trên mobile */
 .menu-toggle {
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
 }
 
+/* Thanh điều hướng (Navigation) */
 header nav {
   display: flex;
   align-items: center;
@@ -55,6 +63,7 @@ header nav {
   padding: 0rem 1rem;
 }
 
+/* Định dạng các liên kết trong menu */
 header nav a,
 header nav a:visited,
 header nav a:hover,
@@ -65,11 +74,15 @@ header nav a:active {
   display: inline-block;
 }
 
+/* =========================================
+      RESPONSIVE - MOBILE (MAX-WIDTH: 800PX)
+      ========================================= */
 @media (max-width:800px) {
   .container {
     justify-content: space-between;
   }
 
+  /* Biến menu ngang thành menu dọc trên mobile */
   .menu {
     display: none;
     flex-direction: column;
@@ -95,26 +108,125 @@ header nav a:active {
     height: 28.4px;
   }
 
+  /* Hiển thị menu khi có class .active (kích hoạt bằng JS) */
   .menu.active {
     display: flex;
   }
-
 }
 
+/* Chỉnh lại bố cục tin tức trên mobile */
 @media (max-width:800px) {
-
   .top-news {
     grid-template-columns: 1fr !important;
   }
 }
 
-/* ............MAIN */
+/* Thêm hiệu ứng cho header */
+/* =========================================
+   HIỆU ỨNG BỔ SUNG CHO HEADER
+   ========================================= */
+
+/* 1. Hiệu ứng Hover cho các liên kết Menu */
+header nav a {
+  position: relative;
+  /* Để làm đường gạch chân */
+  transition: color 0.3s ease;
+  padding: 5px 0;
+}
+
+/* Tạo đường gạch chân chạy từ giữa ra khi hover */
+header nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #ff0000;
+  /* Màu đỏ đặc trưng thể thao, bạn có thể đổi thành trắng #fff */
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+header nav a:hover {
+  color: #ff0000;
+  /* Đổi màu chữ khi hover */
+}
+
+header nav a:hover::after {
+  width: 100%;
+  /* Đường kẻ dài ra 100% khi hover */
+}
+
+/* 2. Hiệu ứng cho Logo */
+.logo {
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.logo:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left-color: #ff0000;
+  /* Đổi màu viền trái sang đỏ */
+  border-right-color: #ff0000;
+  /* Đổi màu viền phải sang đỏ */
+  letter-spacing: 1px;
+  /* Chữ hơi giãn ra một chút cho ngầu */
+}
+
+/* 3. Hiệu ứng cho nút Menu Toggle (Mobile) */
+.menu-toggle:hover {
+  color: #ff0000;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+
+/* 4. Đổ bóng nhẹ cho Header để tạo chiều sâu khi cuộn */
+header {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 5. Hiệu ứng cho các mục menu trên Mobile (khi xổ xuống) */
+@media (max-width: 800px) {
+  .menu a {
+    transition: all 0.4s ease;
+    /* Chỉnh thời gian mượt hơn một chút */
+    position: relative;
+    overflow: hidden;
+    border-left: 0 solid #fff;
+    /* Chuẩn bị cho hiệu ứng vạch trắng */
+  }
+
+  .menu a:hover {
+    /* Nền trắng mờ tỏa ra */
+    background-color: rgba(255, 255, 255, 0.08);
+
+    /* Hiệu ứng tỏa sáng (Glow) màu trắng */
+    box-shadow: inset 5px 0 15px rgba(255, 255, 255, 0.1);
+
+    /* Chữ đổi sang trắng sáng */
+    color: #ffffff !important;
+
+    /* Dịch chữ sang phải một chút */
+    padding: 1rem 2rem !important;
+  }
+
+  /* Xóa gạch chân sau trên mobile */
+  .menu a::after {
+    display: none;
+  }
+}
+
+/* =========================================
+      PHẦN NỘI DUNG CHÍNH (MAIN CONTENT)
+      ========================================= */
 main {
   max-width: 1250px;
   margin: 0px auto;
   padding: 1rem;
 }
 
+/* Tin tức tiêu điểm */
 .headline-news {
   max-width: 1250px;
   margin: auto;
@@ -124,6 +236,7 @@ main {
   border: 1px solid rgba(200, 200, 200, 0.7);
 }
 
+/* Khu vực tin hàng đầu (Grid layout) */
 .top-news {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -132,7 +245,7 @@ main {
   margin: 20px auto;
 }
 
-
+/* Khối tin nóng (Hot news) */
 .hot-news {
   background-color: white;
   border-radius: 1rem;
@@ -157,6 +270,15 @@ main {
   object-fit: cover;
 }
 
+/* làm card-content cho đẹp */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+/* Thông tin bổ sung (Tác giả, ngày tháng) */
 .additional-info {
   display: flex;
   padding: 1rem;
@@ -173,6 +295,7 @@ main {
   font-size: 0.8rem;
   color: rgba(0, 0, 0, 0.6);
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .dot {
@@ -180,6 +303,7 @@ main {
   color: rgba(0, 0, 0, 0.6);
 }
 
+/* Danh sách tin mới nhất bên cạnh tin nóng */
 .latest-news {
   background-color: white;
   border-radius: 1rem;
@@ -188,6 +312,7 @@ main {
   min-height: 300px;
 }
 
+/* Tiêu đề phân mục có đường kẻ ngang */
 .section-title {
   display: flex;
   align-items: center;
@@ -203,6 +328,7 @@ main {
   text-decoration: underline;
 }
 
+/* Đường kẻ trang trí */
 .line {
   height: 3px;
   width: 70%;
@@ -233,6 +359,7 @@ main {
   cursor: pointer;
 }
 
+/* Khu vực nhiều tin tức khác (Responsive grid) */
 .more-news {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -241,6 +368,7 @@ main {
   margin: 20px auto;
 }
 
+/* Thẻ tin tức (Card) dạng nằm ngang */
 .card {
   background-color: white;
   border-radius: 1rem;
@@ -272,13 +400,15 @@ main {
   object-fit: cover;
 }
 
+/* =========================================
+      PHẦN THỂ THAO (SPORT SECTION)
+      ========================================= */
 .sport-section {
   background-color: white;
   border-radius: 1rem;
   padding: 1rem;
   border: 1px solid rgba(200, 200, 200, 0.7);
   margin: 1rem 0;
-  padding: 1rem;
 }
 
 .sport-section h2 {
@@ -286,22 +416,27 @@ main {
   padding: 0;
 }
 
+/* Hàng tin thể thao có thể cuộn ngang */
 .sport-row {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 200px;
+  grid-auto-columns: 250px;
   gap: 1rem;
   max-width: 1250px;
   margin-top: 1rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  /* Hiệu ứng hít khi cuộn */
 }
 
+/* Ẩn thanh cuộn trên trình duyệt Webkit (Chrome, Safari) */
 .sport-row::-webkit-scrollbar {
   display: none;
 }
 
 .box {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   border-radius: 1rem;
   border: 1px solid rgba(200, 200, 200, 0.7);
@@ -329,21 +464,201 @@ main {
   object-fit: cover;
 }
 
+/* =========================================
+      TIỆN ÍCH GIỚI HẠN DÒNG CHỮ (TEXT LIMIT)
+      ========================================= */
 
+/* Giới hạn văn bản tối đa 3 dòng */
 .limit-text {
   display: -webkit-box;
   -webkit-line-clamp: 3;
-  /* số dòng tối đa */
   -webkit-box-orient: vertical;
   overflow: hidden;
   padding-bottom: 0 !important;
 }
 
+/* Giới hạn văn bản tối đa 2 dòng */
 .limit-text-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
-  /* số dòng tối đa */
   -webkit-box-orient: vertical;
   overflow: hidden;
   padding-bottom: 0 !important;
+}
+
+/* =========================================
+   FOOTER STYLES
+   ========================================= */
+footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 3rem 1rem 1rem 1rem;
+  margin-top: 3rem;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.footer-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+/* Cột thương hiệu */
+.footer-brand {
+  flex: 1;
+  min-width: 250px;
+}
+
+.logo-footer {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 1.5rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: white;
+}
+
+/* Cột liên kết */
+.footer-links {
+  flex: 2;
+  min-width: 300px;
+}
+
+.footer-links h3 {
+  font-size: 1rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Chia 2 cột như Sporting News */
+  gap: 1rem;
+}
+
+.link-grid a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.link-grid a:hover {
+  text-decoration: underline;
+}
+
+/* Phần bản quyền dưới cùng */
+.footer-divider {
+  border: 0;
+  border-top: 1px solid #333;
+  max-width: 1250px;
+  margin: 2rem auto;
+}
+
+.footer-bottom {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #888;
+  padding-bottom: 1rem;
+}
+
+.region-select {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.region-select img {
+  width: 18px;
+}
+
+/* Responsive cho điện thoại */
+@media (max-width: 800px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}
+
+/* icon  ...........*/
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  padding: 8px;
+  /* Giúp icon thu nhỏ lại bên trong vòng tròn */
+  box-sizing: border-box;
+  /* Đảm bảo padding không làm tăng kích thước 40px */
+}
+
+.social-icons a img {
+  width: 100%;
+  /* Chiếm hết phần diện tích sau khi trừ padding */
+  height: 100%;
+  object-fit: contain;
+  /* Biến icon màu gốc thành màu trắng */
+  filter: brightness(0) invert(1);
+}
+
+/* Hiệu ứng khi di chuột qua: Vòng tròn sáng lên và icon to lên chút xíu */
+.social-icons a:hover {
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
 }
