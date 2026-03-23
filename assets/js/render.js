@@ -3,27 +3,31 @@
  * Chuyển đổi đường dẫn tương đối (./) thành đường dẫn tương đối rộng (../../)
  */
 export function fixRelativePath(relativePath) {
-  // 1. Lấy đường dẫn thư mục hiện tại (loại bỏ tên file ở cuối)
-  // Ví dụ: "/post/2024/page.html" -> "/post/2024/"
+  const repoName = "SEO_FOOTBALL_INFO"; // Tên repository của bạn
   const pathName = window.location.pathname;
 
-  // 2. Đếm số lượng dấu gạch chéo để biết độ sâu (trừ đi 1 cho folder gốc)
-  // Cẩn thận với dấu gạch chéo ở đầu và cuối
-  const depth = pathName.split('/').filter(p => p !== "").length - 1;
+  // 1. Chia nhỏ đường dẫn thành các phần
+  const pathSegments = pathName.split('/').filter(p => p !== "" && !p.endsWith('.html'));
 
-  // 3. Tạo tiền tố (prefix)
-  // Nếu ở index (depth = 0) -> prefix = ""
-  // Nếu ở post/ (depth = 1) -> prefix = "../"
-  // Nếu ở post/page/ (depth = 2) -> prefix = "../../"
+  // 2. Tìm vị trí của tên Repo trong mảng đường dẫn
+  const repoIndex = pathSegments.indexOf(repoName);
+
+  // 3. Độ sâu thực tế = Tổng số folder phía sau tên Repo
+  // Nếu không tìm thấy repo (chạy localhost), ta tính từ gốc /
+  const depth = repoIndex !== -1
+    ? pathSegments.length - (repoIndex + 1)
+    : pathSegments.length;
+
+  // 4. Tạo prefix ../
   let prefix = "";
   for (let i = 0; i < depth; i++) {
     prefix += "../";
   }
 
-  // 4. Thay thế "./" bằng prefix hoặc nối thêm nếu đường dẫn không có ./
-  let newPath = relativePath.replace(/^\.\//, ""); // Xóa bỏ "./" ở đầu
+  // 5. Xử lý path đầu vào
+  let cleanPath = relativePath.replace(/^\.\//, "");
 
-  return prefix + newPath;
+  return prefix + cleanPath;
 }
 
 export function renderHotNews(post) {
