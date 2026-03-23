@@ -51,7 +51,7 @@ async function initNews() {
 // → Bóng chuyền
 // → NBA
    */
-  const res = await fetch("../../data/posts.json");
+  const res = await fetch("../data/posts.json");
   const data = await res.json();
 
   let posts = data.posts;
