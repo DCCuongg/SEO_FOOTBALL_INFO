@@ -1,9 +1,9 @@
 /* cách trình bày riêng của các pages */
-.section-content .line {
+/* .section-content .line {
   box-sizing: border-box;
   height: 1px;
   margin: 1rem 0 !important;
-}
+} */
 
 .more-news-in-page {
   display: grid;
