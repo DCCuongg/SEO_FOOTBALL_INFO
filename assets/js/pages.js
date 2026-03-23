@@ -1,6 +1,5 @@
+import { fixRelativePath, renderSportSection, renderMoreNews, renderLatestNews, renderHotNews, renderMoreNewsInPage } from './render.js';
 // Thêm một số sự kiện trang chủ
-import { fixRelativePath, renderSportSection, renderMoreNews, renderLatestNews, renderHotNews } from './render.js';
-
 //.........HEADER
 const toggle = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".menu");
@@ -28,6 +27,7 @@ window.addEventListener("scroll", () => {
 
 
 //.........MAIN
+
 async function initNews() {
   /**
 //    * posts.json
@@ -51,27 +51,32 @@ async function initNews() {
 // → Bóng chuyền
 // → NBA
    */
-  const res = await fetch("./data/posts.json");
+  const res = await fetch("../../data/posts.json");
   const data = await res.json();
 
   let posts = data.posts;
 
   // sort theo ngày mới nhất
   posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+  const categoryMap = { "football": "Bóng đá", "basketball": "NBA", "volleyball": "Bóng chuyền", "e-sports": "E-sports" };
+  // Lấy "football" từ URL
+  const fileName = location.pathname.split('/').pop().replace('.html', '');
 
+  const filteredPosts = posts.filter(p => p.category === categoryMap[fileName]);
   // 1 hot news
-  renderHotNews(posts[0]);
+  renderHotNews(filteredPosts[0]);
 
   // 6 tin mới
-  renderLatestNews(posts.slice(1, 7));
+  renderLatestNews(filteredPosts.slice(1, 7));
 
   // 6 tin thêm
-  renderMoreNews(posts.slice(7, 13));
+  renderMoreNewsInPage(filteredPosts.slice(7, 13));
+  console.log(filteredPosts.slice(7, 13));
 
   // render theo category
-  renderSportSection(posts, "Bóng đá", 0);
-  renderSportSection(posts, "Bóng chuyền", 1);
-  renderSportSection(posts, "NBA", 2);
+  // renderSportSection(posts, "Bóng đá", 0);
+  // renderSportSection(posts, "Bóng chuyền", 1);
+  // renderSportSection(posts, "NBA", 2);
 
 }
 

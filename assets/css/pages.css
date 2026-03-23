@@ -1,0 +1,58 @@
+/* cách trình bày riêng của các pages */
+.section-content .line {
+  box-sizing: border-box;
+  height: 1px;
+  margin: 1rem 0 !important;
+}
+
+.more-news-in-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* Khoảng cách giữa 2 cột */
+  margin: 20px auto;
+}
+
+.more-news-in-page>div:first-child {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  background-color: white;
+}
+
+/* Thẻ tin tức (Card) dạng nằm ngang */
+.more-news-in-page .card {
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  height: 150px;
+}
+
+@media (max-width:800px) {
+  .more-news-in-page {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* 
+.card h3 {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  max-height: 60px;
+  overflow: hidden;
+}
+
+.card h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.card .additional-info {
+  padding: 0.5rem 1rem;
+}
+
+.card img {
+  height: 100%;
+  aspect-ratio: 10/8;
+  object-fit: cover;
+} */
