@@ -103,7 +103,7 @@
       "id": 10,
       "title": "Vua phá lưới VLeague 2024/25",
       "slug": "vua-pha-luoi-vleague-2024-25",
-      "category": "VLeague",
+      "category": "Bóng đá",
       "author": "Nhat Pham",
       "date": "2025-05-31",
       "image": "posts/text/1.jpg.webp",
@@ -114,7 +114,7 @@
       "id": 11,
       "title": "Lịch thi đấu VLeague tuần này",
       "slug": "lich-thi-dau-vleague-2024-25",
-      "category": "VLeague",
+      "category": "Bóng đá",
       "author": "Nguyen The Hoang",
       "date": "2025-05-31",
       "image": "posts/text/1.jpg.webp",
@@ -164,6 +164,50 @@
       "image": "posts/text/1.jpg.webp",
       "excerpt": "Danh sách đội tuyển bóng chuyền nam Việt Nam tham dự AVC Champions League.",
       "url": "posts/doi-bong-chuyen-viet-nam-avc/"
+    },
+    {
+      "id": 16,
+      "title": "Lịch thi đấu VLeague tuần này",
+      "slug": "lich-thi-dau-vleague-2024-25",
+      "category": "Bóng đá",
+      "author": "Nguyen The Hoang",
+      "date": "2025-05-31",
+      "image": "posts/text/1.jpg.webp",
+      "excerpt": "Lịch thi đấu và bảng xếp hạng VLeague mùa giải 2024/25.",
+      "url": "posts/lich-thi-dau-vleague-2024-25/"
+    },
+    {
+      "id": 17,
+      "title": "Lịch thi đấu VLeague tuần này",
+      "slug": "lich-thi-dau-vleague-2024-25",
+      "category": "Bóng đá",
+      "author": "Nguyen The Hoang",
+      "date": "2025-05-31",
+      "image": "posts/text/1.jpg.webp",
+      "excerpt": "Lịch thi đấu và bảng xếp hạng VLeague mùa giải 2024/25.",
+      "url": "posts/lich-thi-dau-vleague-2024-25/"
+    },
+    {
+      "id": 18,
+      "title": "Lịch thi đấu VLeague tuần này",
+      "slug": "lich-thi-dau-vleague-2024-25",
+      "category": "Bóng đá",
+      "author": "Nguyen The Hoang",
+      "date": "2025-05-31",
+      "image": "posts/text/1.jpg.webp",
+      "excerpt": "Lịch thi đấu và bảng xếp hạng VLeague mùa giải 2024/25.",
+      "url": "posts/lich-thi-dau-vleague-2024-25/"
+    },
+    {
+      "id": 19,
+      "title": "Lịch thi đấu VLeague tuần này",
+      "slug": "lich-thi-dau-vleague-2024-25",
+      "category": "Bóng đá",
+      "author": "Nguyen The Hoang",
+      "date": "2025-05-31",
+      "image": "posts/text/1.jpg.webp",
+      "excerpt": "Lịch thi đấu và bảng xếp hạng VLeague mùa giải 2024/25.",
+      "url": "posts/lich-thi-dau-vleague-2024-25/"
     }
   ]
 }

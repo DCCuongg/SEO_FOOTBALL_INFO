@@ -21,6 +21,7 @@ header {
   top: 0;
   z-index: 1000;
   transition: transform 0.3s ease;
+  white-space: nowrap;
 }
 
 /* Hiệu ứng ẩn header khi cuộn xuống (thường dùng với JS) */
@@ -38,6 +39,23 @@ header .container {
 }
 
 /* Logo trang web */
+/* Chọn trực tiếp thẻ a có class logo-link */
+.logo-link {
+  text-decoration: none;
+  /* Xóa gạch chân */
+  color: inherit;
+  /* Lấy màu chữ từ thẻ cha hoặc màu đen mặc định */
+  display: inline-block;
+  /* Giúp căn chỉnh dễ hơn nếu cần */
+  outline: none;
+  /* Xóa đường viền khi click vào */
+}
+
+/* Xóa hiệu ứng đổi màu khi đã click vào (visited) */
+.logo-link:visited {
+  color: inherit;
+}
+
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -77,9 +95,10 @@ header nav a:active {
 /* =========================================
       RESPONSIVE - MOBILE (MAX-WIDTH: 800PX)
       ========================================= */
-@media (max-width:800px) {
+@media (max-width:860px) {
   .container {
     justify-content: space-between;
+    gap: 1rem;
   }
 
   /* Biến menu ngang thành menu dọc trên mobile */
