@@ -328,7 +328,6 @@ main {
   border-radius: 1rem;
   padding: 1rem;
   border: 1px solid rgba(200, 200, 200, 0.7);
-  min-height: 300px;
 }
 
 /* Tiêu đề phân mục có đường kẻ ngang */
@@ -356,16 +355,13 @@ main {
 }
 
 .section-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 70%;
+  display: block;
 }
 
 .section-content .line {
-  width: 100%;
-  margin: 0;
+  box-sizing: border-box;
   height: 1px;
+  margin: 1rem 0 !important;
 }
 
 .section-content p {
