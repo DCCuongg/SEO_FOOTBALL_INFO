@@ -245,6 +245,29 @@ main {
   padding: 1rem;
 }
 
+main a {
+  text-decoration: none; 
+  color: inherit;        /* Lấy màu chữ từ thẻ cha (thường là đen hoặc xám) */
+  display: block;        /* Giúp bao phủ toàn bộ vùng chứa */
+}
+
+/* Đảm bảo khi di chuột vào (hover) màu sắc không bị đổi sang xanh */
+main a:hover, 
+main a:visited, 
+main a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Nếu bạn muốn tiêu đề có gạch chân khi di chuột vào (giống các trang báo) */
+.hot-news h2 a:hover,
+.latest-news p a:hover,
+.card-content h3 a:hover,
+.box h3 a:hover {
+  text-decoration: underline;
+  color: #000000; /* Hoặc màu đỏ bạn đang dùng cho theme */
+}
+
 /* Tin tức tiêu điểm */
 .headline-news {
   max-width: 1250px;
@@ -254,6 +277,8 @@ main {
   padding: 1rem;
   border: 1px solid rgba(200, 200, 200, 0.7);
 }
+
+
 
 /* Khu vực tin hàng đầu (Grid layout) */
 .top-news {
