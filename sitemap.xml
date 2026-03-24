@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://dccuongg.github.io/SEO_FOOTBALL_INFO/</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://dccuongg.github.io/SEO_FOOTBALL_INFO/pages/football/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dccuongg.github.io/SEO_FOOTBALL_INFO/pages/basketball/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dccuongg.github.io/SEO_FOOTBALL_INFO/pages/volleyball/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dccuongg.github.io/SEO_FOOTBALL_INFO/pages/e-sports/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dccuongg.github.io/SEO_FOOTBALL_INFO/posts/09-03-2026-Ket-qua-MC-vs-Real/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dccuongg.github.io/SEO_FOOTBALL_INFO/posts/24-03-2026-doi-tuyen-Viet-Nam-giao-huu-Bangladesh/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dccuongg.github.io/SEO_FOOTBALL_INFO/posts/17-03-2026-danh-sach-doi-tuyen-Viet-Nam/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
