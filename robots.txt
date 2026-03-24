@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Đường dẫn đến file sitemap của bạn
+Sitemap: https://dccuongg.github.io/SEO_FOOTBALL_INFO/sitemap.xml

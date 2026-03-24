@@ -80,7 +80,7 @@ export function renderMoreNews(posts) {
       <div class="card">
 
         <a href="${fixRelativePath(post.url)}">
-          <img src="${fixRelativePath(post.image)}" alt="${post.title}">
+          <img src="${fixRelativePath(post.image)}" loading="lazy" alt="${post.title}">
         </a>
 
         <div class="card-content">
@@ -109,7 +109,7 @@ export function renderMoreNewsInPage(posts) {
       <div class="card">
 
         <a href="${fixRelativePath(post.url)}">
-          <img src="${fixRelativePath(post.image)}" alt="${post.title}">
+          <img src="${fixRelativePath(post.image)}" loading="lazy" alt="${post.title}">
         </a>
 
         <div class="card-content">
@@ -143,7 +143,7 @@ export function renderSportSection(posts, category, sectionIndex) {
       <div class="box">
 
         <a href="${fixRelativePath(post.url)}">
-          <img src="${fixRelativePath(post.image)}" alt="${post.title}">
+          <img src="${fixRelativePath(post.image)}" loading="lazy" alt="${post.title}">
         </a>
 
         <div class="card-content">
