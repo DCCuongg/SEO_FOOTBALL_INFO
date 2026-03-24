@@ -37,8 +37,13 @@ export function renderHotNews(post) {
   const hotNews = document.querySelector(".hot-news");
 
   hotNews.innerHTML = `
-    <img src="${fixRelativePath(post.image)}" alt="${post.title}">
-    <h2 class="limit-text">${post.title}</h2>
+    <a href="${fixRelativePath(post.url)}">
+      <img src="${fixRelativePath(post.image)}" alt="${post.title}">
+    </a>
+
+    <h2 class="limit-text">
+      <a href="${fixRelativePath(post.url)}">${post.title}</a>
+    </h2>
     <div class="additional-info">
         <span class="author limit-text-2">${post.author}</span>
         <span class="dot">•</span>
@@ -57,16 +62,15 @@ export function renderLatestNews(posts) {
 
   posts.forEach((post, index) => {
     container.innerHTML += `
-      <p class="limit-text-2">${post.title}</p>
+      <p class="limit-text-2">
+        <a href="${fixRelativePath(post.url)}">${post.title}</a>
+      </p>
       ${index !== posts.length - 1 ? '<div class="line"></div>' : ''}
     `;
   });
 }
 
 export function renderMoreNews(posts) {
-  /**
-   * Hàm render tin thêm (6 bài tiếp)
-   */
   const container = document.querySelector(".more-news");
 
   container.innerHTML = "";
@@ -74,23 +78,28 @@ export function renderMoreNews(posts) {
   posts.forEach(post => {
     container.innerHTML += `
       <div class="card">
-        <img src="${fixRelativePath(post.image)}" alt="${post.title}">
+
+        <a href="${fixRelativePath(post.url)}">
+          <img src="${fixRelativePath(post.image)}" alt="${post.title}">
+        </a>
+
         <div class="card-content">
-          <h3 class="limit-text-2">${post.title}</h3>
+          <h3 class="limit-text-2">
+            <a href="${fixRelativePath(post.url)}">${post.title}</a>
+          </h3>
+
           <div class="additional-info">
             <span class="author limit-text-2">${post.author}</span>
             <span class="dot">•</span>
             <span class="date">${post.date}</span>
           </div>
         </div>
+
       </div>
     `;
   });
 }
 export function renderMoreNewsInPage(posts) {
-  /**
-   * Hàm render tin thêm (6 bài tiếp)
-   */
   const container = document.querySelector(".more-news-in-page div:first-child");
 
   container.innerHTML = "";
@@ -98,23 +107,28 @@ export function renderMoreNewsInPage(posts) {
   posts.forEach(post => {
     container.innerHTML += `
       <div class="card">
-        <img src="${fixRelativePath(post.image)}" alt="${post.title}">
+
+        <a href="${fixRelativePath(post.url)}">
+          <img src="${fixRelativePath(post.image)}" alt="${post.title}">
+        </a>
+
         <div class="card-content">
-          <h3 class="limit-text-2">${post.title}</h3>
+          <h3 class="limit-text-2">
+            <a href="${fixRelativePath(post.url)}">${post.title}</a>
+          </h3>
+
           <div class="additional-info">
             <span class="author limit-text-2">${post.author}</span>
             <span class="dot">•</span>
             <span class="date">${post.date}</span>
           </div>
         </div>
+
       </div>
     `;
   });
 }
 export function renderSportSection(posts, category, sectionIndex) {
-  /**
-   * Hàm render section theo thể loại
-   */
   const sections = document.querySelectorAll(".sport-section");
   const container = sections[sectionIndex].querySelector(".sport-row");
 
@@ -127,17 +141,24 @@ export function renderSportSection(posts, category, sectionIndex) {
   filtered.forEach(post => {
     container.innerHTML += `
       <div class="box">
-        <img src="${fixRelativePath(post.image)}" alt="${post.title}">
+
+        <a href="${fixRelativePath(post.url)}">
+          <img src="${fixRelativePath(post.image)}" alt="${post.title}">
+        </a>
+
         <div class="card-content">
-          <h3 class="limit-text">${post.title}</h3>
+          <h3 class="limit-text">
+            <a href="${fixRelativePath(post.url)}">${post.title}</a>
+          </h3>
+
           <div class="additional-info">
             <span class="author limit-text-2">${post.author}</span>
             <span class="dot">•</span>
             <span class="date">${post.date}</span>
           </div>
         </div>
+
       </div>
     `;
   });
-
 }
