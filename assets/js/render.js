@@ -26,7 +26,7 @@ export function fixRelativePath(relativePath) {
 
   // 5. Xử lý path đầu vào
   let cleanPath = relativePath.replace(/^\.\//, "");
-
+  console.log("Depth:", depth, "Prefix:", prefix, "Clean Path:", cleanPath);
   return prefix + cleanPath;
 }
 
