@@ -265,7 +265,7 @@ main a:active {
 .card-content h3 a:hover,
 .box h3 a:hover {
   text-decoration: underline;
-  color: #000000; /* Hoặc màu đỏ bạn đang dùng cho theme */
+  color: #000000; 
 }
 
 /* Tin tức tiêu điểm */
@@ -440,6 +440,15 @@ main a:active {
   object-fit: cover;
 }
 
+/* Hiệu ứng*/
+.card {
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: scale(1.03);
+}
 /* =========================================
       PHẦN THỂ THAO (SPORT SECTION)
       ========================================= */
@@ -483,7 +492,23 @@ main a:active {
   overflow: hidden;
   scroll-snap-align: start;
 }
-
+/*Hiệu ứng*/
+.box {
+  background-color: transparent; /* Nền trong suốt khi chưa hover */
+  border-radius: 12px; /* Bo góc card theo kiểu YouTube mới */
+  overflow: hidden; /* Đảm bảo bo góc mượt mà */
+  transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1); /* Chuyển động mượt kiểu YouTube */
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0); /* Không có bóng ở trạng thái gốc */
+}
+.box:hover {
+  background-color: rgba(245, 243, 243, 0.1); 
+  
+  /* Đổ bóng đậm và rộng để tạo cảm giác nổi lên */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); 
+  
+  cursor: pointer;
+}
+/*=====*/
 .box h3 {
   margin: 0;
   padding: 0.5rem 1rem;
