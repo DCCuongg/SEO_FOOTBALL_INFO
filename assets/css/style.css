@@ -494,18 +494,15 @@ main a:active {
 }
 /*Hiệu ứng*/
 .box {
-  background-color: transparent; /* Nền trong suốt khi chưa hover */
-  border-radius: 12px; /* Bo góc card theo kiểu YouTube mới */
-  overflow: hidden; /* Đảm bảo bo góc mượt mà */
-  transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1); /* Chuyển động mượt kiểu YouTube */
-  box-shadow: 0 0px 0px rgba(0, 0, 0, 0); /* Không có bóng ở trạng thái gốc */
+  background-color: transparent;
+  border-radius: 12px; 
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
 }
 .box:hover {
   background-color: rgba(245, 243, 243, 0.1); 
-  
-  /* Đổ bóng đậm và rộng để tạo cảm giác nổi lên */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); 
-  
   cursor: pointer;
 }
 /*=====*/
