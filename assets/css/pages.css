@@ -4,6 +4,9 @@
   height: 1px;
   margin: 1rem 0 !important;
 } */
+.top-news {
+  margin: 0 auto 20px auto;
+}
 
 .more-news-in-page {
   display: grid;
