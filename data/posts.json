@@ -9,7 +9,7 @@
       "date": "2026-03-02",
       "image": "posts/text/1.jpg.webp",
       "excerpt": "Cập nhật số bàn thắng của Lionel Messi trong sự nghiệp và so sánh với Cristiano Ronaldo.",
-      "url": "posts/messi-bao-nhieu-ban-thang-su-nghiep/"
+      "url": ""
     },
     {
       "id": 2,
@@ -20,7 +20,7 @@
       "date": "2025-06-05",
       "image": "posts/text/1.jpg.webp",
       "excerpt": "Giải thích nguồn gốc và ý nghĩa tên gọi Thunder của đội bóng rổ Oklahoma City.",
-      "url": "posts/oklahoma-city-thunder-y-nghia-ten-goi/"
+      "url": ""
     },
     {
       "id": 3,
@@ -31,7 +31,7 @@
       "date": "2025-06-09",
       "image": "posts/text/1.jpg.webp",
       "excerpt": "Danh sách các đội vô địch UEFA Nations League qua các mùa giải.",
-      "url": "posts/doi-vo-dich-uefa-nations-league-nhieu-nhat/"
+      "url": ""
     },
     {
       "id": 4,
@@ -42,7 +42,7 @@
       "date": "2025-09-15",
       "image": "posts/text/1.jpg.webp",
       "excerpt": "Tìm hiểu cách Transfermarkt định giá cầu thủ trên thị trường chuyển nhượng.",
-      "url": "posts/transfermarkt-la-gi-dinh-gia-cau-thu/"
+      "url": ""
     },
     {
       "id": 5,
@@ -53,7 +53,7 @@
       "date": "2025-03-25",
       "image": "posts/text/1.jpg.webp",
       "excerpt": "Cập nhật bảng xếp hạng bida carom 3 băng thế giới năm 2025.",
-      "url": "posts/bang-xep-hang-bida-carom-3-bang-2025/"
+      "url": ""
     },
     {
       "id": 6,
@@ -108,7 +108,7 @@
       "date": "2025-05-31",
       "image": "posts/text/1.jpg.webp",
       "excerpt": "Cập nhật bảng xếp hạng vua phá lưới VLeague 2024/25.",
-      "url": "posts/vua-pha-luoi-vleague-2024-25/"
+      "url": ""
     },
     {
       "id": 11,
@@ -119,7 +119,7 @@
       "date": "2025-05-31",
       "image": "posts/text/1.jpg.webp",
       "excerpt": "Lịch thi đấu và bảng xếp hạng VLeague mùa giải 2024/25.",
-      "url": "posts/lich-thi-dau-vleague-2024-25/"
+      "url": ""
     },
     {
       "id": 12,
@@ -130,7 +130,7 @@
       "date": "2026-02-13",
       "image": "posts/text/1.jpg.webp",
       "excerpt": "Thông tin lịch thi đấu và cách xem NBA All-Star 2026.",
-      "url": "posts/nba-all-star-2026-lich-thi-dau/"
+      "url": ""
     },
     {
       "id": 13,
@@ -141,18 +141,18 @@
       "date": "2026-01-24",
       "image": "posts/text/1.jpg.webp",
       "excerpt": "Nhận định trận Los Angeles Lakers vs Dallas Mavericks.",
-      "url": "posts/lakers-vs-mavericks-nhan-dinh/"
+      "url": ""
     },
     {
       "id": 14,
       "title": "Tuyển bóng chuyền nam Việt Nam chia tay AVC Champions League 2025",
-      "slug": "13-05-2025-Ket-qua-bong-chuyen-Viet-Nam-tai-AVC-Champions-League-2025",
+      "slug": "13-05-2025-ket-qua-bong-chuyen-Viet-Nam-tai-AVC-Champions-League-2025",
       "category": "Bóng chuyền",
       "author": "Vuonghan Nguyen",
       "date": "2025-05-13",
       "image": "posts/13-05-2025-ket-qua-bong-chuyen-Viet-Nam-tai-AVC-Champions-League-2025/Bong-Chuyen-Vn.jpeg",
       "excerpt": "Tuyển bóng chuyền nam Việt Nam chia tay AVC Champions League 2025.",
-      "url": "posts/13-05-2025-Ket-qua-bong-chuyen-Viet-Nam-tai-AVC-Champions-League-2025/"
+      "url": "posts/13-05-2025-ket-qua-bong-chuyen-Viet-Nam-tai-AVC-Champions-League-2025/"
     },
     {
       "id": 15,
@@ -163,7 +163,7 @@
       "date": "2025-05-11",
       "image": "posts/text/1.jpg.webp",
       "excerpt": "Danh sách đội tuyển bóng chuyền nam Việt Nam tham dự AVC Champions League.",
-      "url": "posts/doi-bong-chuyen-viet-nam-avc/"
+      "url": ""
     },
     {
       "id": 16,
@@ -174,7 +174,7 @@
       "date": "2025-05-31",
       "image": "posts/text/1.jpg.webp",
       "excerpt": "Lịch thi đấu và bảng xếp hạng VLeague mùa giải 2024/25.",
-      "url": "posts/lich-thi-dau-vleague-2024-25/"
+      "url": ""
     },
     {
       "id": 17,
@@ -185,7 +185,7 @@
       "date": "2025-05-31",
       "image": "posts/text/1.jpg.webp",
       "excerpt": "Lịch thi đấu và bảng xếp hạng VLeague mùa giải 2024/25.",
-      "url": "posts/lich-thi-dau-vleague-2024-25/"
+      "url": ""
     },
     {
       "id": 18,
@@ -196,7 +196,7 @@
       "date": "2025-05-31",
       "image": "posts/text/1.jpg.webp",
       "excerpt": "Lịch thi đấu và bảng xếp hạng VLeague mùa giải 2024/25.",
-      "url": "posts/lich-thi-dau-vleague-2024-25/"
+      "url": ""
     },
     {
       "id": 19,
@@ -207,7 +207,7 @@
       "date": "2025-05-31",
       "image": "posts/text/1.jpg.webp",
       "excerpt": "Lịch thi đấu và bảng xếp hạng VLeague mùa giải 2024/25.",
-      "url": "posts/lich-thi-dau-vleague-2024-25/"
+      "url": ""
     }
   ]
 }

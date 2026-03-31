@@ -246,14 +246,16 @@ main {
 }
 
 main a {
-  text-decoration: none; 
-  color: inherit;        /* Lấy màu chữ từ thẻ cha (thường là đen hoặc xám) */
-  display: block;        /* Giúp bao phủ toàn bộ vùng chứa */
+  text-decoration: none;
+  color: inherit;
+  /* Lấy màu chữ từ thẻ cha (thường là đen hoặc xám) */
+  display: block;
+  /* Giúp bao phủ toàn bộ vùng chứa */
 }
 
 /* Đảm bảo khi di chuột vào (hover) màu sắc không bị đổi sang xanh */
-main a:hover, 
-main a:visited, 
+main a:hover,
+main a:visited,
 main a:active {
   color: inherit;
   text-decoration: none;
@@ -265,7 +267,7 @@ main a:active {
 .card-content h3 a:hover,
 .box h3 a:hover {
   text-decoration: underline;
-  color: #000000; 
+  color: #000000;
 }
 
 /* Tin tức tiêu điểm */
@@ -308,10 +310,19 @@ main a:active {
   cursor: pointer;
 }
 
+/* Chỉ tập trung vào hiệu ứng khi hover */
+.hot-news:hover img {
+  transform: scale(1.05);
+  /* Ảnh phóng to nhẹ */
+  filter: brightness(0.9);
+  /* Ảnh tối lại để tạo lớp mờ */
+}
+
 .hot-news img {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 /* làm card-content cho đẹp */
@@ -374,9 +385,20 @@ main a:active {
 /* Đường kẻ trang trí */
 .line {
   height: 3px;
-  width: 70%;
+  width: 80%;
   margin: 0 1rem;
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.next-icon {
+  height: 1rem;
+  width: auto;
+}
+
+.title-icon {
+  height: 2.5rem;
+  width: auto;
+  margin: 0 1rem 0 0;
 }
 
 .section-content {
@@ -387,6 +409,7 @@ main a:active {
   box-sizing: border-box;
   height: 1px;
   margin: 1rem 0 !important;
+  width: 100%;
 }
 
 .section-content p {
@@ -449,6 +472,7 @@ main a:active {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   transform: scale(1.03);
 }
+
 /* =========================================
       PHẦN THỂ THAO (SPORT SECTION)
       ========================================= */
@@ -492,22 +516,16 @@ main a:active {
   overflow: hidden;
   scroll-snap-align: start;
 }
+
 /*Hiệu ứng*/
-.box {
-  background-color: transparent; /* Nền trong suốt khi chưa hover */
-  border-radius: 12px; /* Bo góc card theo kiểu YouTube mới */
-  overflow: hidden; /* Đảm bảo bo góc mượt mà */
-  transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1); /* Chuyển động mượt kiểu YouTube */
-  box-shadow: 0 0px 0px rgba(0, 0, 0, 0); /* Không có bóng ở trạng thái gốc */
+/* Chỉ tập trung vào hiệu ứng khi hover */
+.box:hover img {
+  transform: scale(1.05);
+  /* Ảnh phóng to nhẹ */
+  filter: brightness(0.9);
+  /* Ảnh tối lại để tạo lớp mờ */
 }
-.box:hover {
-  background-color: rgba(245, 243, 243, 0.1); 
-  
-  /* Đổ bóng đậm và rộng để tạo cảm giác nổi lên */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); 
-  
-  cursor: pointer;
-}
+
 /*=====*/
 .box h3 {
   margin: 0;
@@ -527,6 +545,7 @@ main a:active {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 /* =========================================
