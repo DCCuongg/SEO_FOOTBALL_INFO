@@ -1,0 +1,149 @@
+/* ====== KHUNG BÀI VIẾT ====== */
+.post-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 15px;
+  font-family: 'Noto Sans', sans-serif;
+  color: #222;
+}
+
+/* ====== TIÊU ĐỀ ====== */
+.post-content h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.post-content h2 {
+  font-size: 22px;
+  margin: 25px 0 10px;
+  border-left: 4px solid #e63946;
+  padding-left: 10px;
+}
+
+/* ====== ĐOẠN VĂN ====== */
+.post-content p:not(.img-chu-thich) {
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 18px;
+  text-indent: 20px;
+}
+
+/* ====== ẢNH ====== */
+.post-content img {
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* ====== ẢNH HERO ====== */
+.post-content .post-hero {
+  position: relative;
+  margin: 20px 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.post-content .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: #fff;
+}
+
+.post-content .overlay h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+/* ====== DANH SÁCH ====== */
+.post-content ul {
+  padding-left: 20px;
+  margin: 15px 0;
+}
+
+.post-content li {
+  margin-bottom: 8px;
+}
+
+/* ====== HIGHLIGHT ====== */
+.post-content .link-highlight {
+  background: #f1f5f9;
+  padding: 12px 15px;
+  border-left: 4px solid #3b82f6;
+  margin: 20px 0;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* ====== HIỆU ỨNG ẢNH ====== */
+.post-content img:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+/* ====== CHỮ CÁI ĐẦU TO (STYLE BÁO) ======
+.post-content p:first-of-type::first-letter {
+  font-size: 32px;
+  font-weight: bold;
+  float: left;
+  margin-right: 8px;
+  line-height: 1;
+}
+ */
+/* ====== MOBILE ====== */
+@media (max-width: 768px) {
+  .post-content h1 {
+    font-size: 26px;
+  }
+
+  .post-content h2 {
+    font-size: 20px;
+  }
+
+  .post-content p {
+    font-size: 16px;
+  }
+
+  .post-content .overlay h2 {
+    font-size: 16px;
+  }
+}
+
+.highlight-video {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.highlight-video iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.highlight-video:hover {
+  transform: scale(1.01);
+  transition: 0.3s;
+}
+
+.img-chu-thich {
+  font-size: 15px;          /* chữ nhỏ vừa đọc */
+  color: #000000;              /* nhẹ hơn màu đen */
+  text-align: center;       /* căn giữa */
+  margin-top: -20px;          /* sát ảnh (quan trọng) */
+  margin-bottom: 20px;
+  font-style: italic;
+  line-height: 1.4;
+}
+.img-chu-thich {
+  font-size: clamp(10px, 1.5vw, 12px);
+}
