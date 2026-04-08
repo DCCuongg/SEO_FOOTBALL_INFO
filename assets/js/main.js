@@ -72,6 +72,7 @@ async function initNews() {
   renderSportSection(posts, "Bóng đá", 0);
   renderSportSection(posts, "Bóng chuyền", 1);
   renderSportSection(posts, "NBA", 2);
+  renderSportSection(posts, "E-sports", 3);
 
 }
 
