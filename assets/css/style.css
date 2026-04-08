@@ -466,7 +466,7 @@ main a:active {
 
 @media (max-width: 800px) {
   .card img {
-    max-width: 200px;
+    max-width: 140px;
   }
 }
 
