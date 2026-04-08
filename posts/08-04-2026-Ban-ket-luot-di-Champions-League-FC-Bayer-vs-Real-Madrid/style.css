@@ -139,3 +139,16 @@
 .img-chu-thich {
   font-size: clamp(10px, 1.5vw, 12px);
 }
+
+.post-doi-hinh {
+  width: 100%;
+  max-width: 500px;   /* chỉnh số này để giống hình bạn */
+  margin: 20px auto;  /* căn giữa */
+}
+
+.post-doi-hinh img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
