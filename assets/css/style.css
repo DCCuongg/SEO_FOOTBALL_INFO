@@ -371,6 +371,7 @@ main a:active {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .section-title>* {
@@ -461,6 +462,12 @@ main a:active {
   height: 100%;
   aspect-ratio: 10/8;
   object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .card img {
+    max-width: 200px;
+  }
 }
 
 /* Hiệu ứng*/
