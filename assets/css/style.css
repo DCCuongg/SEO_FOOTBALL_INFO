@@ -372,9 +372,12 @@ main a:active {
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
+  flex-wrap: wrap;
+
 }
 
 .section-title>* {
+  /* Quan trọng: ép trình duyệt bỏ qua kích thước nội dung tối thiểu */
   white-space: nowrap;
 }
 
@@ -386,9 +389,10 @@ main a:active {
 /* Đường kẻ trang trí */
 .line {
   height: 3px;
-  width: 80%;
+  flex-grow: 1;
   margin: 0 1rem;
   background-color: rgba(0, 0, 0, 0.2);
+
 }
 
 .next-icon {
