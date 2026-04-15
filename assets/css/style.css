@@ -36,6 +36,7 @@ header .container {
   margin: 0 auto;
   position: relative;
   padding: 1rem;
+  align-items: center;
 }
 
 /* Logo trang web */
@@ -183,6 +184,11 @@ header nav a:hover::after {
   user-select: none;
 }
 
+.logo h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
 .logo:hover {
   background-color: rgba(255, 255, 255, 0.1);
   border-left-color: #ff0000;
@@ -233,6 +239,14 @@ header {
   /* Xóa gạch chân sau trên mobile */
   .menu a::after {
     display: none;
+  }
+
+  .section-title h2 {
+    font-size: 1rem;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
   }
 }
 
@@ -372,7 +386,6 @@ main a:active {
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
-  flex-wrap: wrap;
 
 }
 
@@ -390,7 +403,7 @@ main a:active {
 .line {
   height: 3px;
   flex-grow: 1;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   background-color: rgba(0, 0, 0, 0.2);
 
 }
@@ -704,6 +717,31 @@ footer {
 
 .region-select img {
   width: 18px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #ccc;
+  /* Màu chữ phụ nhẹ nhàng */
+  display: flex;
+  align-items: center;
+}
+
+.contact-info a {
+  color: #fff;
+  /* Màu số điện thoại và email nổi bật */
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 5px;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+  /* Tạo đường gạch chân mượt */
+}
+
+.contact-info a:hover {
+  /* Đổi màu xanh khi di chuột vào (giống màu sport) */
+  border-bottom: 1px solid white;
 }
 
 /* Responsive cho điện thoại */
