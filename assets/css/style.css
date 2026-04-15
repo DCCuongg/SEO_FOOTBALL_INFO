@@ -187,6 +187,7 @@ header nav a:hover::after {
 .logo h1 {
   font-size: 1.8rem;
   font-weight: bold;
+  margin: 0;
 }
 
 .logo:hover {
