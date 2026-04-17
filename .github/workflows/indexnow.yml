@@ -1,0 +1,26 @@
+name: "IndexNow Auto"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Fetch All URLs from Sitemap and Submit"
+        run: |
+          # 1. Lấy toàn bộ link từ sitemap.xml, lọc bỏ thẻ <loc> và định dạng thành mảng JSON
+          # Cần cài jq (có sẵn trên ubuntu-latest) để xử lý JSON
+          URL_LIST=$(curl -s https://dccuongg.github.io/SEO_FOOTBALL_INFO/sitemap.xml | grep -oP '(?<=<loc>).*?(?=</loc>)' | jq -R . | jq -s .)
+
+          # 2. Gửi lệnh POST duy nhất một lần chứa toàn bộ link bài viết
+          curl -X POST "https://api.indexnow.org/indexnow" \
+          -H "Content-Type: application/json; charset=utf-8" \
+          -d "{
+            \"host\": \"dccuongg.github.io\",
+            \"key\": \"${{ secrets.INDEXNOW_KEY }}\",
+            \"keyLocation\": \"https://dccuongg.github.io/SEO_FOOTBALL_INFO/${{ secrets.INDEXNOW_KEY }}.txt\",
+            \"urlList\": $URL_LIST
+          }"
