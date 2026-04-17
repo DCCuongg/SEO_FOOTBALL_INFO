@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch: # Cho phép bấm nút "Run workflow" để test tay
 
 jobs:
   indexnow:
@@ -11,12 +12,15 @@ jobs:
     steps:
       - name: "Fetch All URLs from Sitemap and Submit"
         run: |
-          # 1. Lấy toàn bộ link từ sitemap.xml, lọc bỏ thẻ <loc> và định dạng thành mảng JSON
-          # Cần cài jq (có sẵn trên ubuntu-latest) để xử lý JSON
+          # 1. Lấy toàn bộ link từ sitemap.xml và định dạng thành mảng JSON
           URL_LIST=$(curl -s https://dccuongg.github.io/SEO_FOOTBALL_INFO/sitemap.xml | grep -oP '(?<=<loc>).*?(?=</loc>)' | jq -R . | jq -s .)
+          
+          # 2. In ra để check dữ liệu (Debug)
+          echo "Dữ liệu URL gửi đi: $URL_LIST"
 
-          # 2. Gửi lệnh POST duy nhất một lần chứa toàn bộ link bài viết
-          curl -X POST "https://api.indexnow.org/indexnow" \
+          # 3. Gửi lệnh POST đến Bing
+          # Lưu ý: In ra cả Response để xem Bing trả về success hay error
+          curl -X POST "https://www.bing.com/indexnow" \
           -H "Content-Type: application/json; charset=utf-8" \
           -d "{
             \"host\": \"dccuongg.github.io\",
