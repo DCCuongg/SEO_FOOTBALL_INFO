@@ -2,25 +2,25 @@
   "posts": [
     {
       "id": 1,
-      "title": "Bán kết lượt đi UEFA Champions League Bayern Munich vs Real Madrid",
-      "slug": "ban-ket-luot-di-uefa-champions-league-bayern-munich-vs-real-madrid",
+      "title": "Tứ kết lượt đi UEFA Champions League Bayern Munich vs Real Madrid",
+      "slug": "tu-ket-luot-di-uefa-champions-league-bayern-munich-vs-real-madrid",
       "category": "Bóng đá",
       "author": "The Sporting News",
       "date": "2026-04-08",
-      "image": "posts/08-04-2026-Ban-ket-luot-di-Champions-League-FC-Bayer-vs-Real-Madrid/KQ.jpg",
-      "excerpt": "Cập nhật kết quả trận đấu giữa Bayern Munich và Real Madrid ở vòng bán kết lượt đi UEFA Champions League.",
-      "url": "posts/08-04-2026-Ban-ket-luot-di-Champions-League-FC-Bayer-vs-Real-Madrid/"
+      "image": "posts/08-04-2026-Tu-ket-luot-di-Champions-League-FC-Bayer-vs-Real-Madrid/KQ.jpg",
+      "excerpt": "Cập nhật kết quả trận đấu giữa Bayern Munich và Real Madrid ở vòng tứ kết lượt đi UEFA Champions League.",
+      "url": "posts/08-04-2026-Tu-ket-luot-di-Champions-League-FC-Bayer-vs-Real-Madrid/"
     },
     {
       "id": 2,
-      "title": "Bán kết lượt đi UEFA Champions League Arsenal vs Sporting CP",
-      "slug": "ban-ket-luot-di-uefa-champions-league-arsenal-vs-sporting-cp",
+      "title": "Tứ kết lượt đi UEFA Champions League Arsenal vs Sporting CP",
+      "slug": "tu-ket-luot-di-uefa-champions-league-arsenal-vs-sporting-cp",
       "category": "Bóng đá",
       "author": "Nhat Pham",
       "date": "2026-04-08",
-      "image": "posts/08-04-2026-Ban-ket-luot-di-Champions-League-Arsenal-vs-Sporting-CP/KQ.jpg",
-      "excerpt": "Cập nhật kết quả trận đấu giữa Arsenal và Sporting CP ở vòng bán kết lượt đi UEFA Champions League.",
-      "url": "posts/08-04-2026-Ban-ket-luot-di-Champions-League-Arsenal-vs-Sporting-CP/"
+      "image": "posts/08-04-2026-Tu-ket-luot-di-Champions-League-Arsenal-vs-Sporting-CP/KQ.jpg",
+      "excerpt": "Cập nhật kết quả trận đấu giữa Arsenal và Sporting CP ở vòng tứ kết lượt đi UEFA Champions League.",
+      "url": "posts/08-04-2026-Tu-ket-luot-di-Champions-League-Arsenal-vs-Sporting-CP/"
     },
     {
       "id": 3,
@@ -87,6 +87,17 @@
       "image": "posts/17-12-2025-tuyen-thu-nu-Lien-Quan-Mobile-Thai-Lan-gian-lan-tai-Seagames-33-la-ai/naphat-warasin-la-ai.jpg",
       "excerpt": "Nữ tuyển thủ Liên Quân Mobile Thái Lan gian lận tại SEA Games 33 là ai?",
       "url": "posts/17-12-2025-tuyen-thu-nu-Lien-Quan-Mobile-Thai-Lan-gian-lan-tai-Seagames-33-la-ai/"
+    },
+    {
+      "id": 11,
+      "title": "Kết quả vòng 33 Ngoại hạng Anh: Manchester City vs Arsenal",
+      "slug": "21-04-2026-ket-qua-vong-33-ngoai-hang-anh-manchester-city-vs-arsenal",
+      "category": "Bóng đá",
+      "author": "Nhat Pham",
+      "date": "2026-04-21",
+      "image": "posts/21-04-2026-Ket-qua-vong-33-Ngoai-hang-Anh-Manchester-City-vs-Arsenal/KQ.jpg",
+      "excerpt": "Kết quả trận đấu Ngoại hạng Anh vòng 33 giữa Manchester City và Arsenal.",
+      "url": "posts/21-04-2026-Ket-qua-vong-33-Ngoai-hang-Anh-Manchester-City-vs-Arsenal/"
     },
     {
       "id": 13,
