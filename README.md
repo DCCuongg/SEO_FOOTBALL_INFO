@@ -5,8 +5,8 @@
 ## 🌐 Link Truy Cập Chính Thức
 > **Lưu ý:** Vui lòng ưu tiên truy cập địa chỉ chính thức bên dưới để có trải nghiệm tốt nhất.
 
-* **Website chính thức (Chính): [https://sportingnewsuit.id.vn](https://sportingnewsuit.id.vn)**
-* Link dự phòng 1: [dccuongg.github.io/SEO_FOOTBALL](https://dccuongg.github.io/SEO_FOOTBALL)
+* **Website chính thức (Chính): [https://sportnewsuit.id.vn](https://sportnewsuit.id.vn)**
+* Link dự phòng 1: [dccuongg.github.io/SEO_FOOTBALL](https://dccuongg.github.io/SEO_FOOTBALL_INFO/)
 * Link dự phòng 2: [sportingnew24.netlify.app](https://sportingnew24.netlify.app/)
 
 ## 🛡️ Cam Kết Bảo Mật & Uy Tín

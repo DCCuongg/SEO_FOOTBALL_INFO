@@ -52,7 +52,7 @@
   width: 100%;
   padding: 15px;
 
-  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
   color: #fff;
 }
 
@@ -128,14 +128,19 @@
 }
 
 .img-chu-thich {
-  font-size: 15px;          /* chữ nhỏ vừa đọc */
-  color: #000000;              /* nhẹ hơn màu đen */
-  text-align: center;       /* căn giữa */
-  margin-top: -20px;          /* sát ảnh (quan trọng) */
+  font-size: 15px;
+  /* chữ nhỏ vừa đọc */
+  color: #000000;
+  /* nhẹ hơn màu đen */
+  text-align: center;
+  /* căn giữa */
+  margin-top: -20px;
+  /* sát ảnh (quan trọng) */
   margin-bottom: 20px;
   font-style: italic;
   line-height: 1.4;
 }
+
 .img-chu-thich {
   font-size: clamp(10px, 1.5vw, 12px);
 }
