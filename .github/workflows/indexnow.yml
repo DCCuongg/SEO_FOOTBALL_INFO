@@ -13,7 +13,7 @@ jobs:
       - name: "Fetch All URLs from Sitemap and Submit"
         run: |
           # 1. Lấy toàn bộ link từ sitemap mới (đảm bảo file sitemap.xml đã được push lên)
-          URL_LIST=$(curl -s https://sportingnewsuit.id.vn/sitemap.xml | grep -oP '(?<=<loc>).*?(?=</loc>)' | jq -R . | jq -s .)
+          URL_LIST=$(curl -s https://sportnewsuit.id.vn/sitemap.xml | grep -oP '(?<=<loc>).*?(?=</loc>)' | jq -R . | jq -s .)
           
           # 2. Debug: Kiểm tra xem có lấy được URL nào không
           if [ "$URL_LIST" == "[]" ] || [ -z "$URL_LIST" ]; then
@@ -26,8 +26,8 @@ jobs:
           curl -s -i -X POST "https://www.bing.com/indexnow" \
           -H "Content-Type: application/json; charset=utf-8" \
           -d "{
-            \"host\": \"sportingnewsuit.id.vn\",
+            \"host\": \"sportnewsuit.id.vn\",
             \"key\": \"${{ secrets.INDEXNOW_KEY }}\",
-            \"keyLocation\": \"https://sportingnewsuit.id.vn/${{ secrets.INDEXNOW_KEY }}.txt\",
+            \"keyLocation\": \"https://sportnewsuit.id.vn/${{ secrets.INDEXNOW_KEY }}.txt\",
             \"urlList\": $URL_LIST
           }"
