@@ -101,8 +101,14 @@
   </url>
 
   <url>
-    <loc>https://sportnewsuit.id.vn/posts/07-05-2025-Ds-bong-chuyen-nam-Viet-Nam-du-giai-vo-dich-cac-CLB-chau-A-2025/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <loc>https://sportnewsuit.id.vn/pages/about.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://sportnewsuit.id.vn/pages/contact.html</loc>
+    <lastmod>2026-04-19</lastmod>
     <priority>0.5</priority>
   </url>
 
