@@ -1,6 +1,39 @@
 {
   "posts": [
     {
+      "id": 27,
+      "title": "Rời khỏi Golden State, Jonathan Kuminga hóa người hùng gồng gánh Atlanta Hawks tại Game 3",
+      "slug": "11-04-2026-roi-khoi-golden-state-jonathan-kuminga-hoa-nguoi-hung-gong-ganh-atlanta-hawks-tai-game-3",
+      "category": "NBA",
+      "author": "Thục Quyên",
+      "date": "2026-04-11",
+      "image": "posts/11-04-2026-roi-khoi-golden-state-jonathan-kuminga-hoa-nguoi-hung-gong-ganh-atlanta-hawks-tai-game-3/kuminga-anh1.jpg",
+      "excerpt": "Jonathan Kuminga ghi 21 điểm từ ghế dự bị, dẫn dắt Atlanta Hawks đánh bại New York Knicks 109-98 ở Game 3. Hawks dẫn trước 2-1 trong series.",
+      "url": "posts/11-04-2026-roi-khoi-golden-state-jonathan-kuminga-hoa-nguoi-hung-gong-ganh-atlanta-hawks-tai-game-3/"
+    },
+    {
+      "id": 26,
+      "title": "Tân binh Raptors đi vào lịch sử cùng Magic Johnson và Tony Parker sau màn tỏa sáng trước Cavaliers",
+      "slug": "11-04-2026-toa-sang-truoc-cavaliers-tan-binh-raptors-di-vao-lich-su-cung-magic-johnson-va-tony-parker",
+      "category": "NBA",
+      "author": "Thục Quyên",
+      "date": "2026-04-11",
+      "image": "posts/11-04-2026-toa-sang-truoc-cavaliers-tan-binh-raptors-di-vao-lich-su-cung-magic-johnson-va-tony-parker/collin-anh1.jpg",
+      "excerpt": "Collin Murray-Boyles, tân binh 20 tuổi Raptors, ghi 22 điểm với hiệu suất 73.3% trước Cavaliers. Gia nhập nhóm hiếm cùng Magic Johnson và Tony Parker.",
+      "url": "posts/11-04-2026-toa-sang-truoc-cavaliers-tan-binh-raptors-di-vao-lich-su-cung-magic-johnson-va-tony-parker/"
+    },
+    {
+      "id": 25,
+      "title": "Ghi Triple-Double với 27 điểm, Nikola Jokic sánh ngang LeBron James trong sách kỷ lục NBA Playoffs",
+      "slug": "11-04-2026-ghi-triple-double-voi-27-diem-nikola-jokic-sanh-ngang-lebron-james-trong-sach-ky-luc-nba-playoffs",
+      "category": "NBA",
+      "author": "Việt Long",
+      "date": "2026-04-11",
+      "image": "posts/11-04-2026-ghi-triple-double-voi-27-diem-nikola-jokic-sanh-ngang-lebron-james-trong-sach-ky-luc-nba-playoffs/nikolai-anh1.jpg",
+      "excerpt": "Nikola Jokic ghi 27 điểm, 12 rebounds, 16 kiến tạo tại Game 5 playoff. Trở thành cầu thủ thứ 2 có 20 triple-double từ 20 điểm trở lên, sau LeBron James.",
+      "url": "posts/11-04-2026-ghi-triple-double-voi-27-diem-nikola-jokic-sanh-ngang-lebron-james-trong-sach-ky-luc-nba-playoffs/"
+    },
+    {
       "id": 24,
       "title": "Cai Xiaoqing chính thức chia tay bóng chuyền Việt Nam",
       "slug": "11-04-2026-cai-xiaoqing-chinh-thuc-chia-tay-bong-chuyen-viet-nam",
