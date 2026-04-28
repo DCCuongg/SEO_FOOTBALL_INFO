@@ -5,7 +5,10 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  /* Giúp font hiển thị mịn hơn trên macOS/iOS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   background-color: rgb(240, 240, 240);
 }
@@ -603,7 +606,6 @@ footer {
   color: #ffffff;
   padding: 3rem 1rem 1rem 1rem;
   margin-top: 3rem;
-  font-family: 'Noto Sans', sans-serif;
 }
 
 .footer-container {
