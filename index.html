@@ -43,14 +43,14 @@
   <meta name="twitter:title" content="Cộng đồng thể thao UIT: Tin tức bóng đá, bóng rổ, e-sports" />
   <meta name="twitter:description" content="Xem tin tức, kết quả và lịch thi đấu các môn thể thao UIT hôm nay." />
   <meta name="twitter:image" content="./assets/img/favicon.png" />
+  <!-- preload tối ưu tốc dộ tải trang -->
+  <link rel="preload" href="./assets/js/render.js" as="script" crossorigin>
 
+  <link rel="preload" href="/data/posts.json" as="fetch" crossorigin="anonymous">
   <!-- Optional: để iOS/Android dùng icon -->
   <link rel="stylesheet" href="./assets/css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="canonical" href="https://sportnewsuit.id.vn/" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
 
   <script type="application/ld+json">
     {
@@ -89,8 +89,9 @@
       <section class="top-news">
         <div class="hot-news">
           <a href="posts/manchester-united-vs-brentford-nhan-dinh/">
-            <img src="posts/manchester-united-vs-brentford-nhan-dinh/mu-vs-brentford.jpg"
-              alt="Manchester United vs Brentford: Nhận định, dự đoán tỷ số &amp; phân tích chi tiết">
+            <img src="posts/manchester-united-vs-brentford-nhan-dinh/mu-vs-brentford.webp"
+              alt="Manchester United vs Brentford: Nhận định, dự đoán tỷ số &amp; phân tích chi tiết"
+              fetchpriority="high">
           </a>
 
           <h2 class="limit-text">
@@ -322,7 +323,7 @@
         <div class="box">
 
           <a href="posts/21-04-2026-Ket-qua-vong-33-Ngoai-hang-Anh-Manchester-City-vs-Arsenal/">
-            <img src="posts/21-04-2026-Ket-qua-vong-33-Ngoai-hang-Anh-Manchester-City-vs-Arsenal/KQ.jpg" loading="lazy"
+            <img src="posts/21-04-2026-Ket-qua-vong-33-Ngoai-hang-Anh-Manchester-City-vs-Arsenal/KQ.webp" loading="lazy"
               alt="Kết quả vòng 33 Ngoại hạng Anh: Manchester City vs Arsenal">
           </a>
 

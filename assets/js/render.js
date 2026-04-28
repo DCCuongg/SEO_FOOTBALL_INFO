@@ -38,7 +38,7 @@ export function renderHotNews(post) {
 
   hotNews.innerHTML = `
     <a href="${fixRelativePath(post.url)}">
-      <img src="${fixRelativePath(post.image)}" alt="${post.title}">
+      <img src="${fixRelativePath(post.image)}" alt="${post.title}" fetchpriority="high">
     </a>
 
     <h2 class="limit-text">
