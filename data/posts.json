@@ -1,6 +1,17 @@
 {
   "posts": [
     {
+      "id": 24,
+      "title": "Cai Xiaoqing chính thức chia tay bóng chuyền Việt Nam",
+      "slug": "11-04-2026-cai-xiaoqing-chinh-thuc-chia-tay-bong-chuyen-viet-nam",
+      "category": "Bóng chuyền",
+      "author": "Công Thành",
+      "date": "2026-04-11",
+      "image": "posts/11-04-2026-cai-xiaoqing-chinh-thuc-chia-tay-bong-chuyen-viet-nam/chu-cong-nu.jpg",
+      "excerpt": "Chủ công người Trung Quốc Cai Xiaoqing chính thức chia tay bóng chuyền Việt Nam thông qua bài đăng trên Instagram cá nhân. Hành trình thi đấu thứ hai cùng XMLS Thanh Hóa đi đến hồi kết.",
+      "url": "posts/11-04-2026-cai-xiaoqing-chinh-thuc-chia-tay-bong-chuyen-viet-nam/"
+    },
+    {
       "id": 23,
       "title": "Ấn định thời điểm tuyển bóng chuyền nữ Việt Nam tập trung sau Cúp Hùng Vương",
       "slug": "11-04-2026-an-dinh-thoi-diem-tuyen-bong-chuyen-nu-viet-nam-tap-trung",
