@@ -1,6 +1,28 @@
 {
   "posts": [
     {
+      "id": 21,
+      "title": "So sánh Yamal vs Cherki: Ai là tiền vệ cánh xuất sắc nhất?",
+      "slug": "11-04-2026-yamal-bi-danh-gia-thap-hon-cherki",
+      "category": "Bóng đá",
+      "author": "Thanh Quý",
+      "date": "2026-04-11",
+      "image": "posts/11-04-2026-yamal-bi-danh-gia-thap-hon-cherki/yamal.jpg",
+      "excerpt": "Phân tích chi tiết so sánh năng lực, thành tích và tiềm năng của Lamine Yamal (Barcelona) và Rayan Cherki (Manchester City) trong mùa giải 2025-2026.",
+      "url": "posts/11-04-2026-yamal-bi-danh-gia-thap-hon-cherki/"
+    },
+    {
+      "id": 20,
+      "title": "Đình Bắc ghi hat-trick lần đầu ở V-League 2025-2026",
+      "slug": "11-04-2026-dinh-bac-lan-dau-ghi-hat-trick-o-v-league",
+      "category": "Bóng đá",
+      "author": "Hiếu Lương",
+      "date": "2026-04-11",
+      "image": "posts/11-04-2026-dinh-bac-lan-dau-ghi-hat-trick-o-v-league/dinh-bac-ghi-ban.jpg",
+      "excerpt": "Tiền đạo Nguyễn Đình Bắc ghi ba bàn trong trận thắng Công an Hà Nội 4-2 trước SLNA, lập cột mốc quan trọng trong sự nghiệp.",
+      "url": "posts/11-04-2026-dinh-bac-lan-dau-ghi-hat-trick-o-v-league/"
+    },
+    {
       "id": 1,
       "title": "Tứ kết lượt đi UEFA Champions League Bayern Munich vs Real Madrid",
       "slug": "tu-ket-luot-di-uefa-champions-league-bayern-munich-vs-real-madrid",
