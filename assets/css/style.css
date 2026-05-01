@@ -8,7 +8,7 @@
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/noto-sans-v42-latin_vietnamese-regular.woff2') format('woff2');
+  src: url('/assets/fonts/noto-sans-v42-latin_vietnamese-regular.woff2') format('woff2');
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -19,7 +19,7 @@
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/noto-sans-v42-latin_vietnamese-600.woff2') format('woff2');
+  src: url('/assets/fonts/noto-sans-v42-latin_vietnamese-600.woff2') format('woff2');
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
